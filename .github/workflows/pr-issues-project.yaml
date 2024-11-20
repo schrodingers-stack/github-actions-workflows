@@ -29,7 +29,7 @@
       - reopened
   
   jobs:
-    add-to-project:
+    pr-issues-project:
       runs-on: ubuntu-latest
       steps:
       - name: Generate authentication token from GitHub App
