@@ -1,4 +1,10 @@
 ---
+# GitHub Actions workflow to lint commits on pull requests of the Schrödinger's Stack repositories.
+#
+# IMPORTANT: This workflow is called by other workflows in the organization's repositories and it is centralized here 
+# in order to be easily maintained. Because of this, please make sure you're not introducing any breaking changes when
+# modifying this workflow.
+
 name: "commits-checks"
 
 on:
