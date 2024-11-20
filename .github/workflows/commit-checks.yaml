@@ -2,6 +2,7 @@
 name: "commits-checks"
 
 on:
+  workflow_call:
   pull_request:
 
 jobs:
