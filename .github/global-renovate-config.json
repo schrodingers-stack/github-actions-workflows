@@ -22,5 +22,8 @@
     "work: obvious",
     "state: pending",
     "priority: soon"
+  ],
+  "dependencyDashboardLabels": [
+    "renovate"
   ]
 }
