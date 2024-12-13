@@ -10,6 +10,11 @@
   "platformCommit": "enabled",
   "repositoryCache": "enabled",
   "autodiscover": true,
+  "autodiscoverFilter": [
+    "schrodingers-stack/github-actions-workflows",
+    "schrodingers-stack/helm-*",
+    "schrodingers-stack/terraform-*"
+  ]
   "onboarding": false,
   "requireConfig": "required",
   "branchPrefix": "renovate-github/",
