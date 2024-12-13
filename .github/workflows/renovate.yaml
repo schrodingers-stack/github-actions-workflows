@@ -80,11 +80,14 @@ jobs:
       with:
         app-id: ${{ secrets.SCHTACK_RENOVATOR_APP_ID }}
         private-key: ${{ secrets.SCHTACK_RENOVATOR_PRIVATE_KEY }}
+        # This line is what says that the token is not limited to the current repository but to all repositories its 
+        # owner has access to.
+        owner: ${{ github.repository_owner }}
 
     - name: Run Renovate
       uses: renovatebot/github-action@v41.0.6
       with:
-        configurationFile: global-renovate-config.json
+        configurationFile: .github/global-renovate-config.json
         token: ${{ steps.app-token.outputs.token }}
       env:
         LOG_LEVEL: ${{ github.event.inputs.logLevel }}
