@@ -10,10 +10,8 @@
   "platformCommit": "enabled",
   "repositoryCache": "enabled",
   "autodiscover": true,
-  "autodiscoverFilter": [
-    "schrodingers-stack/github-actions-workflows",
-    "schrodingers-stack/helm-*",
-    "schrodingers-stack/terraform-*"
+  "autodiscoverNamespaces": [
+    "schrodingers-stack"
   ],
   "onboarding": false,
   "requireConfig": "required",
