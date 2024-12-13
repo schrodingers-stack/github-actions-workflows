@@ -15,6 +15,10 @@
   ],
   "onboarding": false,
   "requireConfig": "required",
+  "repositories": [
+    "schrodingers-stack/helm-argo-cd",
+    "schrodingers-stack/helm-cert-manager"
+  ],
   "branchPrefix": "renovate-github/",
   "labels": [
     "renovate",
