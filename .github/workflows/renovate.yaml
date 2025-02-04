@@ -76,7 +76,7 @@ jobs:
 
     - name: Generate authentication token from GitHub App
       id: app-token
-      uses: actions/create-github-app-token@v1.11.2
+      uses: actions/create-github-app-token@v1.11.3
       with:
         app-id: ${{ secrets.SCHTACK_RENOVATOR_APP_ID }}
         private-key: ${{ secrets.SCHTACK_RENOVATOR_PRIVATE_KEY }}
