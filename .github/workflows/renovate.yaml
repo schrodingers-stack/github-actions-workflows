@@ -53,7 +53,6 @@ jobs:
         name: ${{ env.cache_key }}
         path: cache-download
 
-
     - name: Extract Renovate cache
       run: |
         set -x
