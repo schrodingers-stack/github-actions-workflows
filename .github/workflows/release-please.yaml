@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Generate authentication token from GitHub App
-      id: app-token
+      id: app_token
       uses: actions/create-github-app-token@v1.11.6
       with:
         app-id: ${{ secrets.SCHTACK_RELEASER_APP_ID }}
@@ -41,4 +41,4 @@ jobs:
       uses: googleapis/release-please-action@v4.2.0
       id: release-please
       with:
-        token: ${{ steps.app-token.outputs.token }}
+        token: ${{ steps.app_token.outputs.token }}

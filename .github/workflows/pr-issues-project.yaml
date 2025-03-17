@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Generate authentication token from GitHub App
-      id: app-token
+      id: app_token
       uses: actions/create-github-app-token@v1.11.6
       with:
         app-id: ${{ secrets.SCHTACK_MAINTAINER_APP_ID }}
@@ -43,4 +43,4 @@ jobs:
       uses: actions/add-to-project@v1.0.2
       with:
         project-url: https://github.com/orgs/schrodingers-stack/projects/1/
-        github-token: ${{ steps.app-token.outputs.token }}
+        github-token: ${{ steps.app_token.outputs.token }}
