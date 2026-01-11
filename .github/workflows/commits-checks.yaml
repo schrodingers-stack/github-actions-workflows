@@ -17,4 +17,4 @@ jobs:
 
     steps:
     - name: Check commit messages
-      uses: opensource-nepal/commitlint@v1.3.1
+      uses: opensource-nepal/commitlint@v1.13.3
